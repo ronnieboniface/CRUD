@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Raleway:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>CRUD</title>
+  </head>
+
+  <body>
+    <main>
+      <div class="app-name">
+        Rails API Library
+      </div>
+      <article class="new-form">
+        <form id="book-form">
+          <label for="title">Title:</label>
+          <input type="text" id="title" name="title" />
+
+          <label for="author">Author:</label>
+          <input type="text" id="author" name="author" />
+
+          <label for="publisher">Publisher:</label>
+          <input type="text" id="publisher" name="publisher" />
+
+          <label for="genre">Genre:</label>
+          <input type="text" id="genre" name="genre" />
+
+          <p>
+            <button type="submit">Create Book</button>
+          </p>
+        </form>
+      </article>
+
+
+      <article class="book-container">
+        <section id="book-list">
+
+        </section>
+      </article>
+
+    </main>
+  
+    <script src="src/render.js"></script>
+    <script src="src/api.js"></script>
+    <script src="src/index.js"></script>
+  </body>
+</html>
